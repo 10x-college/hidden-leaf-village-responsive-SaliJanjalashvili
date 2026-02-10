@@ -81,11 +81,8 @@ nav {
 .hero-section {
   background-color: #1A1A1A;
   height: 37.7rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 2.4rem;
+  display: grid;
+  place-items: center;
 }
 
 .hero-section-logo {
@@ -94,20 +91,23 @@ nav {
 }
 
 .hero-section-overlay {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  padding: 0 2.4rem;
   background-color: #2A2A2AE5;
   height: 37.7rem;
   width: 100%;
-  position: absolute;
 }
 
-.hero-section h2 {
+.hero-section-overlay h2 {
   margin-bottom: 1.5rem;
-  z-index: 1;
+  align-self: flex-end;
 }
 
-.hero-section p {
+.hero-section-overlay p {
   font-size: 1.6rem;
   font-weight: 500;
+  align-self: flex-start;
   text-align: center;
-  z-index: 1;
 }
