@@ -124,7 +124,7 @@ nav {
   display: grid;
   place-items: center;
   gap: 2.4rem;
-  padding: 3.9rem 0;
+  padding: 3.9rem 0 16.2rem 0;
 }
 
 .card {
