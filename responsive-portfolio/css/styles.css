@@ -47,30 +47,6 @@ p {
   transition: all 0.2s ease-out;
 }
 
-@media (min-width: 768px) {
-  .header-container {
-    height: 20rem !important;
-    gap: 1.3rem !important;
-  }
-
-  .header-container h2 {
-    font-size: 4rem;
-    font-weight: 700;
-  }
-
-  .header-container-logo img {
-    width: 5.786rem !important;
-  }
-
-  .header-container-logo {
-    gap: 1.762rem !important;
-  }
-
-  .header-container p {
-    font-size: 1.8rem;
-  }
-}
-
 .header-container-logo {
   display: flex;
   justify-content: center;
@@ -83,23 +59,53 @@ p {
   transition: all 0.2s ease-out;
 }
 
+@media (min-width: 768px) {
+  #header-container {
+    height: 20rem;
+    gap: 1.3rem;
+  }
+
+  .header-container h2 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  #header-container-logo img {
+    width: 5.786rem;
+  }
+
+  #header-container-logo {
+    gap: 1.762rem;
+  }
+
+  .header-container p {
+    font-size: 1.8rem;
+  }
+}
+
 nav {
   background-color: #1A1A1A;
   height: 7.1rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 1.3rem;
   padding: 0 1.3rem;
+  transition: all 0.2s ease-out;
 }
 
 .nav-item {
-  background-color: #FF6B1A;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
   padding: 0.7rem 1.7rem 0.7rem 1.3rem;
   border-radius: 0.8rem;
+  transition: all 0.2s ease-out;
+}
+
+.nav-item:hover {
+  background-color: #FF6B1A;
 }
 
 .nav-item img {
@@ -109,6 +115,32 @@ nav {
 .nav-item p {
   font-size: 1.9rem;
   font-weight: 500;
+}
+
+.village,
+.academy,
+.jutsu,
+.missions {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #nav {
+    height: 6rem;
+    justify-content: center;
+  }
+
+  .nav-item.menu {
+    display: none;
+  }
+
+  .village,
+  .academy,
+  .jutsu,
+  .missions {
+    display: block;
+    font-size: 1.7rem;
+  }
 }
 
 /* main */
