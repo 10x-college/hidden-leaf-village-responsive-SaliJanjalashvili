@@ -60,7 +60,7 @@ p {
 }
 
 @media (min-width: 768px) {
-  #header-container {
+  .header .header-container {
     height: 20rem;
     gap: 1.3rem;
   }
@@ -70,11 +70,11 @@ p {
     font-weight: 700;
   }
 
-  #header-container-logo img {
+  .header .header-container-logo img {
     width: 5.786rem;
   }
 
-  #header-container-logo {
+  .header .header-container-logo {
     gap: 1.762rem;
   }
 
@@ -125,7 +125,7 @@ nav {
 }
 
 @media (min-width: 768px) {
-  #nav {
+  .nav {
     height: 6rem;
     justify-content: center;
   }
