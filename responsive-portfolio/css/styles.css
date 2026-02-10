@@ -111,3 +111,16 @@ nav {
   align-self: flex-start;
   text-align: center;
 }
+
+/* footer */
+
+footer {
+  background-color: #1A1A1A;
+  height: 9rem;
+  display: grid;
+  place-items: center;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
