@@ -74,3 +74,40 @@ nav {
   font-size: 1.9rem;
   font-weight: 500;
 }
+
+/* main */
+/* hero section  */
+
+.hero-section {
+  background-color: #1A1A1A;
+  height: 37.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2.4rem;
+}
+
+.hero-section-logo {
+  position: absolute;
+  width: 18rem;
+}
+
+.hero-section-overlay {
+  background-color: #2A2A2AE5;
+  height: 37.7rem;
+  width: 100%;
+  position: absolute;
+}
+
+.hero-section h2 {
+  margin-bottom: 1.5rem;
+  z-index: 1;
+}
+
+.hero-section p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  z-index: 1;
+}
