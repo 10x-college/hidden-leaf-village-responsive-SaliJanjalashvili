@@ -263,6 +263,12 @@ nav {
   }
 }
 
+@media (min-width: 1200px) {
+  .cards-section {
+    grid-template-columns: repeat(3, 32.4rem);
+  }
+}
+
 /* footer */
 
 .site-footer {
