@@ -207,8 +207,11 @@ nav {
 .cards-section {
   display: grid;
   place-items: center;
-  gap: 2.4rem;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  gap: 3rem;
   padding: 3.9rem 0 16.2rem 0;
+  transition: all 0.2s ease-out;
 }
 
 .card {
@@ -254,6 +257,12 @@ nav {
   line-height: 2rem;
 }
 
+@media (min-width: 768px) {
+  .cards-section {
+    grid-template-columns: repeat(2, 32.4rem);
+  }
+}
+
 /* footer */
 
 .site-footer {
@@ -265,4 +274,10 @@ nav {
 
 .site-footer p {
   font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .site-footer p {
+    font-size: 1.6rem;
+  }
 }
