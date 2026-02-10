@@ -151,11 +151,14 @@ nav {
   height: 37.7rem;
   display: grid;
   place-items: center;
+  position: relative;
+  transition: all 0.2s ease-out;
 }
 
 .hero-section-logo {
   position: absolute;
   width: 18rem;
+  transition: all 0.2s ease-out;
 }
 
 .hero-section-overlay {
@@ -164,7 +167,7 @@ nav {
   place-items: center;
   padding: 0 2.4rem;
   background-color: #2A2A2AE5;
-  height: 37.7rem;
+  height: 100%;
   width: 100%;
 }
 
@@ -178,6 +181,25 @@ nav {
   font-weight: 500;
   align-self: flex-start;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  section.hero-section {
+    height: 53rem;
+  }
+
+  .hero-section h2{
+    font-size: 4rem;
+    margin-bottom: 1.9rem;
+  }
+
+  .hero-section p {
+    font-size: 1.8rem;
+  }
+
+  .hero-section .hero-section-logo {
+    width: 36rem;
+  }
 }
 
 /* cards section */
