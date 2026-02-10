@@ -17,6 +17,7 @@ h2 {
   font-size: 2.4rem;
   font-weight: 700;
   color: #FFFFFF;
+  transition: all 0.2s ease-out;
 }
 
 h3 {
@@ -29,6 +30,7 @@ p {
   font-size: 1.4rem;
   font-weight: 500;
   color: #FFFFFF;
+  transition: all 0.2s ease-out;
 }
 
 /* header */
@@ -41,16 +43,44 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease-out;
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    height: 20rem !important;
+    gap: 1.3rem !important;
+  }
+
+  .header-container h2 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  .header-container-logo img {
+    width: 5.786rem !important;
+  }
+
+  .header-container-logo {
+    gap: 1.762rem !important;
+  }
+
+  .header-container p {
+    font-size: 1.8rem;
+  }
 }
 
 .header-container-logo {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1.2rem;
 }
 
 .header-container-logo img {
   width: 2.4rem;
+  transition: all 0.2s ease-out;
 }
 
 nav {
@@ -181,4 +211,4 @@ nav {
 
 .site-footer p {
   font-size: 1.2rem;
-} 
+}
